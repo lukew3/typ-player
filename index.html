@@ -5,24 +5,40 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+	<!--
 	<table id="metadataTable">
 		<tr>
 			<th>Key</th>
 			<th>Value</th>
 		</tr>
 	</table>
+	-->
 
 	<div id="ttrPlayer_container">
-		<div id="ttrPlayer_fileSelect">
-			<input type="file" id="fileInput">
-			<button id="loadButton">Load ttr</button>
+		<div id="ttrPlayer_topRow">
+			<div id="ttrPlayer_fileSelect">
+				<input type="file" id="fileInput">
+				<button id="loadButton">Load ttr</button>
+				<p id="ttrPlayer_filename"></p>
+			</div>
+			<select id="ttrPlayer_typeSelect">
+				<option value="monkeytype">monkeytype.com</option>
+			</select>
 		</div>
-		<div id="ttrPlayer_controls">
-			<button id="playPauseButton">Play Replay</button>
+		<div id="ttrPlayer_body">
+			<div id="ttrPlayer_controls">
+				<button id="playPauseButton">Play Replay</button>
+			</div>
+			<div id="ttrPlayer_replay"></div>
 		</div>
-		<div id="ttrPlayer_prompt"></div>
-		<div id="ttrPlayer_replay"></div>
+		<div id="ttrPlayer_bottom">
+			<div id="ttrPlayer_bottomLeft">
+
+			</div>
+			<div id="ttrPlayer_bottomRight">
+
+			</div>
+		</div>
 	</div>
 
 	<script src="bundle.js"></script>

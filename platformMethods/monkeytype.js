@@ -21,7 +21,6 @@ const initMonkeytype = (ttr, inReplayField) => {
 }
 
 const renderEventMonkeytype = (dataObj, index) => {
-        lastRenderedIndex = index;
         let activeLetter = replayField.children[wordPos].children[charPos];
         if (dataObj[1] === "Shift") {
                 // Ignore shift

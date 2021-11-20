@@ -1,3 +1,12 @@
+html {
+	background-color: #343434;
+}
+
+* {
+	color: white;
+	margin: 0;
+}
+
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
@@ -6,6 +15,31 @@ table, th, td {
 textarea {
 	width: calc(100% - 10px);
 }
+
+button, select {
+	background-color: #505050;
+	border-radius: 4px;
+	padding: 5px 7px;
+	border: none;
+}
+
+#ttrPlayer_container {
+	width: 80%;
+	margin-top: 30%;
+	margin-left: calc(10% - 25px);
+	background-color: #3f3f3f;
+	border: solid 1px #BABABA;
+	border-radius: 5px;
+	min-height: 200px;
+	padding: 20px;
+}
+
+#ttrPlayer_topRow {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
 
 #ttrPlayer_replay {
 	display: flex;
@@ -27,7 +61,7 @@ textarea {
 }
 
 .ttrPlayer_replay_letter.correct {
-	color: black;
+	color: white;
 }
 
 .ttrPlayer_replay_letter.incorrect {

@@ -34,7 +34,7 @@ playPauseReplayButton.addEventListener("click", (event) => {
 });
 
 const initReplay = () => {
-	initTable();
+	//initTable();
 	initDisplay();
 }
 
@@ -81,6 +81,7 @@ const pauseReplay = () => {
 	running = false;
 	pausedIndex = lastRenderedIndex;
 	pausedTime = ttr.data[lastRenderedIndex][0];
+	lastRenderedIndex = 0;
 	playPauseReplayButton.innerHTML = "Resume Replay";
 	renderList.forEach((item) => {
 		clearTimeout(item);
@@ -89,6 +90,7 @@ const pauseReplay = () => {
 }
 
 const renderEvent = (dataObj, index) => {
+	lastRenderedIndex++;
 	// change next line to suit your desired style
 	//renderEventMinimal(dataObj, index);
 	renderEventMonkeytype(dataObj, index);

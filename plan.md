@@ -1,28 +1,26 @@
 PLAN
 ====
 
+---
+
 * Replay will look like monkeytype
   * Prompt is shown in grey and filled in white and red when
 * Button for play pause
 * Clicking on the text will move the cursor to that point
 
-|
-V
+---
 
 * Handle different rules
 
-|
-V
+---
 
 * Handle signatures
 
-|
-V
+---
 
 * Handle different sites styles
 
-|
-V
+----
 
 * Make a module that can be imported so that the replay can be used on other sites
 * How it will be used:

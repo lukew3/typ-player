@@ -10,12 +10,12 @@ let pausedIndex = 0;
 let pausedTime = 0;
 
 const promptField = document.getElementById("promptField");
-const replayField = document.getElementById("ttrPlayer_replay");
+const replayContainer = document.getElementById("ttrPlayer_replay");
 const playPauseReplayButton = document.getElementById("playPauseButton");
 const loadButton = document.getElementById("loadButton");
 const metadataTable = document.getElementById("metadataTable");
 
-replayField.innerHTML = "";
+replayContainer.innerHTML = "";
 
 loadButton.addEventListener("click", (event) => {
 	let file = document.getElementById("fileInput").files[0];
@@ -48,8 +48,8 @@ const initTable = () => {
 }
 
 const initDisplay = () => {
-	initMonkeytype(ttr, replayField);
-	//initMinimal(ttr, replayField);
+	initMonkeytype(ttr, replayContainer);
+	//initMinimal(ttr, replayContainer);
 }
 
 const playReplay = () => {

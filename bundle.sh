@@ -1,1 +1,1 @@
-browserify app.js -o bundle.js
+browserify main.js -o bundle.js

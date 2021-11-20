@@ -25,7 +25,7 @@ button, select {
 
 #ttrPlayer_container {
 	width: 80%;
-	margin-top: 30%;
+	margin-top: 30vh;
 	margin-left: calc(10% - 25px);
 	background-color: #3f3f3f;
 	border: solid 1px #BABABA;

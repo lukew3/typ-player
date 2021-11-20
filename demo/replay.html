@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  textarea {
+	  width: calc(100% - 10px);
+  }
+</style>
+</head>
+<body>
+	<input type="file" id="fileInput">
+	<button id="loadButton">Load ttr</button>
+
+	<table id="metadataTable">
+		<tr>
+			<th>Key</th>
+			<th>Value</th>
+		</tr>
+	</table>
+
+	<p id="promptField">Prompt text will go here...</p>
+
+	<textarea id="displayField" readonly></textarea>
+	<br>
+	<button id="playButton">Play Replay</button>
+
+	<br>
+	<button id="stopButton">Stop</button>
+
+	<script src="main.js"></script>
+</body>
+</html>
+

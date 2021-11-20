@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/lukew3/ttr-player/issues"
   },
-  "homepage": "https://github.com/lukew3/ttr-player#readme"
+  "homepage": "https://github.com/lukew3/ttr-player#readme",
+  "dependencies": {}
 }

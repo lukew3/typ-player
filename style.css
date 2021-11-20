@@ -1,0 +1,39 @@
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+textarea {
+	width: calc(100% - 10px);
+}
+
+#ttrPlayer_replay {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-content: flex-start;
+}
+
+.ttrPlayer_replay_word {
+	position: relative;
+	margin: 0.25rem;
+	color: grey;
+	line-height: 1rem;
+}
+
+.ttrPlayer_replay_letter {
+	display: inline-block;
+	color: grey;
+}
+
+.ttrPlayer_replay_letter.correct {
+	color: black;
+}
+
+.ttrPlayer_replay_letter.incorrect {
+	color: red;
+}
+
+.ttrPlayer_replay_letter.extra {
+	color: pink;
+}

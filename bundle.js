@@ -14,11 +14,14 @@ const replayContainer = document.getElementById("ttrPlayer_replay");
 const playPauseReplayButton = document.getElementById("playPauseButton");
 const loadButton = document.getElementById("loadButton");
 const metadataTable = document.getElementById("metadataTable");
+const fileInput = document.getElementById("fileInput");
+
 
 replayContainer.innerHTML = "";
 
-loadButton.addEventListener("click", (event) => {
-	let file = document.getElementById("fileInput").files[0];
+fileInput.addEventListener('change', () => {
+	document.getElementById("ttrPlayer_filename").innerHTML = fileInput.value.replace(/^.*[\\\/]/, '');
+	let file = fileInput.files[0];
 	if (!file) return;
 	let fr = new FileReader();
 	fr.onload = (event) => {

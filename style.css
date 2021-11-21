@@ -84,3 +84,18 @@ button, select {
 .ttrPlayer_replay_letter.extra {
 	color: pink;
 }
+
+#ttrPlayer_bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+#ttrPlayer_bottomRight {
+	display: flex;
+	position: relative;
+	margin-top: 55px;
+}
+
+#ttrPlayer_bottomRight p {
+	margin-left: 20px;
+}

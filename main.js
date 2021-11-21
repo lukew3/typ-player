@@ -38,8 +38,15 @@ playPauseReplayButton.addEventListener("click", (event) => {
 
 const initReplay = () => {
 	//initTable();
+	initMetadataDisplay();
 	initDisplay();
 }
+
+const initMetadataDisplay = () => {
+	document.getElementById("ttrPlayer_username").innerHTML = ttr.metadata.username;
+	document.getElementById("ttrPlayer_timeStarted").innerHTML = ttr.metadata.time;
+	document.getElementById("ttrPlayer_software").innerHTML = ttr.metadata.software;
+};
 
 const initTable = () => {
 	Object.keys(ttr.metadata).forEach((key) => {

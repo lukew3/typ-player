@@ -3,8 +3,6 @@ PLAN
 
 ---
 
-* Replay will look like monkeytype
-  * Prompt is shown in grey and filled in white and red when
 * Button for play pause
 * Clicking on the text will move the cursor to that point
 
